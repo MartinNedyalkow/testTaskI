@@ -1,0 +1,131 @@
+
+body { 
+    background: url(assets/white-brick-wall-desktop-background.jpg) no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  html {
+  scroll-behavior: smooth;
+  
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left; 
+  width:16%;
+  text-align:center;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #firstLi{
+    color:white;
+    background-color: black;
+  }
+  .startInfo{
+    height: 600px;
+      text-align: center;
+      margin-top: 200px
+  }
+  #project1{
+    display: inline-block;
+    border: 1px solid black;
+    width: 70%;
+    height: 30%;
+    text-align: left
+
+  }
+  #project1 img{ 
+      float:right;
+    width: 200px;
+    height: 200px;
+  }
+  #project1 li{
+      width: auto;
+      float: left;
+      text-align: left
+  }
+  #PROJECTS{
+    text-align: center;
+    margin-top: 300px
+  }
+  .nav1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;  
+  }
+  .nav1 li{
+    width:33%;
+  }
+  .card-group{
+    height: 600px;
+  }
+  .card-img-top{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px;
+  }
+
+  .row {
+    margin-top: 300px;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 14.2%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
