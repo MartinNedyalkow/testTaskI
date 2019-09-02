@@ -16,19 +16,31 @@
     <div class="navigation">
 <ul>
     <li ><a id="firstLi" href="index.html">MNED</a></li>
+    
+    <li><a href="#ABOUT">ABOUT</a></li>
     <li><a href="#PROJECTS">PROJECTS</a></li>
     <li><a href="#TECHNOLOGIES">TECHNOLOGIES</a></li>
-    <li><a href="news.asp">WORK</a></li>
-    <li><a href="about.asp">CONTACTS</a></li>
-    <li><a href="contact.asp">ABOUT</a></li>
+    <li><a href="#CONTACT">CONTACTS</a></li>
 </ul>
 </div>
 <div class="startInfo">
-    <h2><strong><u>MEET</u></strong></h2>
     <h1>Martin Nedyalkov</h1>
-    <p>Learn from your past self and help your future self.</p>
-    <a href="#PROJECTS"><i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
+    <h3>"If I had asked people what they wanted, they would have said faster horses.” <br>
+        - Henry Ford</h3>
+    <a href="#ABOUT"><i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
 </div>
+<div id="ABOUT">
+    <div id="aboutContent">
+      <img id="aboutImg" src="/assets/BAW (1).jpg" alt="profile">
+      <h4>I`m detailed-oriented, responsible and commited front-end engineer. <br>
+        My good communication skills and team player attitude <br>
+        allow me to easily fit in new environments. <br>
+        I have the needed expertise to build websited and web applications. <br>
+        My specialty is JavaScript and I have experience working with <br>
+        TypeScript, Node.js, HTML, CSS, Bootstrap and Angular Material. <br>
+        Interested in Agile methodologies.</h4>
+        </div>
+    </div>
 <div class="card-group" id="PROJECTS">
         <div class="card">
           <a href="https://gitlab.com/brpraziel/nutrition-spa" target="_blank"><img src="assets/nutri.jpg" class="card-img-top" alt="Nutri logo"></a>
@@ -85,6 +97,54 @@
                         <img src="assets/1_YWazhGyGmNs6K3HZE7lS7Q.png">
                     </div>
     </div>
+    
+    <div id="CONTACT">
+      <div id="contactWrapper">
+        <div class="textContact"><h4>If you have a project that you want to get started,<br> think you need my help with something or just fancy <br> saying "Hi", then get in touch.</h4></div>
+
+      <div class="contactContainer">
+        
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id="fieldset">
+              <div class="well well-sm">
+                <form class="form-horizontal" action="" method="post">
+                <fieldset >
+                  
+                  <div class="text-center"><h2>Contact Me</h2></div>
+                  <div class="form-group">
+                    
+                    <div class="col-md-9">
+                      <input id="name" name="name" type="text" placeholder="Your name*" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-9">
+                      <input id="email" name="email" type="text" placeholder="Your email*" class="form-control">
+                    </div>
+                  </div>
+          
+                  <div class="form-group">
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12 text-right" id="submitButton">
+                      <button type="button" class="btn btn-primary btn-lg" id="buttonForm">Submit</button>
+                    </div>
+                    <p id="myP">It seems the button broke. <br> Oh well just call me.</p>
+                  </div>
+                </fieldset>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 </body>
 
+<script type="text/javascript" src="./contactForm.js"></script>
 </html>

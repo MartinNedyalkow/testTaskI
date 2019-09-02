@@ -5,6 +5,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-x: hidden;
+  }
+  a:visited{
+    color: black
   }
   html {
   scroll-behavior: smooth;
@@ -15,7 +19,6 @@ body{
 }
 
 .navigation{
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;
   }
@@ -27,10 +30,15 @@ ul {
     overflow: hidden;
     background-color: white;
   }
-  
+  li:hover{
+    background-color: black;
+  }
+  li a:hover{
+    color: white
+  }
   li {
     float: left; 
-  width:16%;
+  width:20%;
   text-align:center;
   }
   
@@ -69,11 +77,11 @@ ul {
       text-align: left
   }
   #PROJECTS{
+    padding-top: 10%;
     text-align: center;
-    margin-top: 300px
+    margin-top: 300px;
   }
   .nav1{
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;  
   }
@@ -90,6 +98,12 @@ ul {
   width: 50%;
   padding: 20px;
   }
+.card img{
+  transition: transform .2s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
 
   .row {
     margin-top: 300px;
@@ -112,7 +126,13 @@ ul {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 50%;
+    transition:transform .8s ease-in-out;
   }
+  .column img:hover {
+  transform: rotate(360deg);
+  }
+  
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -129,3 +149,61 @@ ul {
       max-width: 100%;
     }
   }
+  #CONTACT{
+    height: 600px;
+    padding-top: 1%
+  }
+  #contactWrapper{
+    padding-top: 0%
+  }
+  .text-center{
+    padding: 5px;
+    text-align: center;
+    margin-right: 27%
+  }
+  #submitButton{
+    margin-left: 53.5%
+  }
+  #fieldset{
+    display: inline-block;
+    margin-left: 5%
+  }
+  #buttonForm{
+    color: white;
+    background-color: black;
+    border: 0px
+  }
+.textContact{
+  float:left;
+  margin-left: 5%;
+  margin-top: 3.5%
+}
+.form-control{
+  width: 220%
+}
+#myP{
+  visibility: hidden
+}
+#ABOUT{
+  height: 600px;
+  display:inline-block;
+  text-align: center;
+  margin-left: 27%
+}
+#aboutImg{
+  border-radius: 50%;
+  width: 30%;
+padding-bottom: 20px
+  
+}
+#TECHNOLOGIES{
+  padding-top: 20%;
+  padding-right: 0%
+}
+#aboutContent{
+  margin-top: 30%;
+  text-align: center
+}
+.text-center{
+  margin-right: 45%
+}
